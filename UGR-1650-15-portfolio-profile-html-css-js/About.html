@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="About Reyan - Software Engineering Student at AAU and Digital Designer"
+    />
+    <title>About Me - Reyan's Portfolio</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div>
+          <a href="index.html" aria-label="Home">
+            <img
+              src="./src/images/logo.jpg"
+              alt="Website Logo"
+              width="150"
+              height="50"
+            />
+          </a>
+          <ul id="main-menu">
+            <li><a href="Home.html">Home</a></li>
+            <li><a href="About.html">About</a></li>
+            <li><a href="Projects.html" aria-current="page">Projects</a></li>
+            <li><a href="Education.html">Education</a></li>
+            <li><a href="Interests.html">Interests</a></li>
+          </ul>
+        </div>
+        <button
+          type="button"
+          aria-expanded="false"
+          aria-controls="main-menu"
+          aria-label="Toggle navigation menu"
+        >
+          ☰
+        </button>
+      </nav>
+    </header>
+
+    <main>
+      <h1>About Me</h1>
+
+      <section>
+        <h2>Welcome to My Story</h2>
+        <p>Learn about my journey in technology and design</p>
+      </section>
+
+      <section>
+        <h2>Education</h2>
+        <div>
+          <article>
+            <h3>Student at AAU</h3>
+            <ol>
+              <li>
+                <p>
+                  I'm a 3rd year software engineering student at Addis Ababa
+                  Institute of Technology
+                </p>
+              </li>
+              <li>
+                <p>Currently focusing on web development and UI/UX design</p>
+              </li>
+            </ol>
+          </article>
+          <figure>
+            <img
+              src="./src/images/AAU.png"
+              alt="Addis Ababa University campus"
+              width="400"
+              height="300"
+            />
+          </figure>
+        </div>
+
+        <div>
+          <h3>My campus is AAiT</h3>
+          <div role="region" aria-label="Campus image gallery">
+            <button type="button" aria-label="Previous image">
+              <i class="fa-solid fa-chevron-left" aria-hidden="true"></i>
+            </button>
+
+            <figure>
+              <img
+                src="./src/images/5kilo.jpg"
+                alt="5 Kilo Campus view"
+                width="400"
+                height="300"
+              />
+            </figure>
+            <figure>
+              <img
+                src="./src/images/NB.jpg"
+                alt="Natural Science Building"
+                width="400"
+                height="300"
+              />
+            </figure>
+            <figure>
+              <img
+                src="./src/images/AAit.jpg"
+                alt="AAiT Main Building"
+                width="400"
+                height="300"
+              />
+            </figure>
+
+            <button type="button" aria-label="Next image">
+              <i class="fa-solid fa-chevron-right" aria-hidden="true"></i>
+            </button>
+
+            <div role="tablist" aria-label="Image navigation">
+              <button
+                type="button"
+                role="tab"
+                aria-selected="true"
+                aria-label="View first image"
+              ></button>
+              <button
+                type="button"
+                role="tab"
+                aria-selected="false"
+                aria-label="View second image"
+              ></button>
+              <button
+                type="button"
+                role="tab"
+                aria-selected="false"
+                aria-label="View third image"
+              ></button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <h2>Design Portfolio</h2>
+        <p>
+          While I may not possess exceptional traditional artistic skills, I've
+          discovered a unique talent for translating my creative vision into
+          stunning digital art.
+        </p>
+
+        <div role="list" aria-label="Digital art portfolio">
+          <figure>
+            <img
+              src="./src/images/cr7.png"
+              alt="Digital art of Cristiano Ronaldo"
+              width="300"
+              height="400"
+            />
+            <figcaption>Cristiano Ronaldo</figcaption>
+          </figure>
+          <figure>
+            <img
+              src="./src/images/Hazard.png"
+              alt="Digital art of Eden Hazard"
+              width="300"
+              height="400"
+            />
+            <figcaption>Eden Hazard</figcaption>
+          </figure>
+          <figure>
+            <img
+              src="./src/images/messi.png"
+              alt="Digital art of Lionel Messi"
+              width="300"
+              height="400"
+            />
+            <figcaption>Lionel Messi</figcaption>
+          </figure>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>© <time datetime="2024">2024</time> Reyan. All Rights Reserved.</p>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+    <meta name="description" content="Reyan's Portfolio - Front-end Developer specializing in responsive web development">
+    <title>Reyan - Front-end Developer Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  </head>
+  <body>
+    <header>
+        <nav>
+            <div>
+                <a href="index.html" aria-label="Home">
+                    <img
+                      src="./src/images/logo.jpg"
+                      alt="Website Logo"
+                      width="150"
+                      height="50"
+                >
+                  </a>
+              <ul id="main-menu">
+                <li><a href="Home.html">Home</a></li>
+                <li><a href="About.html">About</a></li>
+                <li><a href="Projects.html" aria-current="page">Projects</a></li>
+                <li><a href="Education.html">Education</a></li>
+                <li><a href="Interests.html">Interests</a></li>
+              </ul>
+            </div>
+            <button
+              type="button"
+              aria-expanded="false"
+              aria-controls="main-menu"
+              aria-label="Toggle navigation menu"
+            >
+              ☰
+            </button>
+          </nav>
+    </header>
+
+    <main>
+      <section id="home" aria-labelledby="hero-title">
+        <div>
+          <h1 id="hero-title">I am Reyan</h1>
+          <p>A Front-end Developer</p>
+        </div>
+        <figure>
+          <img src="./src/images/reyan.jpg" 
+               alt="Reyan's professional headshot" 
+               width="75" 
+               height="100">
+        </figure>
+      </section>
+
+      <section id="about" aria-labelledby="about-title">
+        <header>
+          <h2 id="about-title">About me</h2>
+          <p>I build websites that make people's lives easier.</p>
+        </header>
+        <ul>
+          <li>
+            <i class="fa-solid fa-palette" aria-hidden="true"></i>
+            <span>A designer</span>
+          </li>
+          <li>
+            <i class="fa-solid fa-code" aria-hidden="true"></i>
+            <span>Love coding</span>
+          </li>
+          <li>
+            <i class="fa-solid fa-plane" aria-hidden="true"></i>
+            <span>Always Travel</span>
+          </li>
+        </ul>
+        <a href="About.html" class="button">Learn More</a>
+      </section>
+
+      <section id="projects" aria-labelledby="projects-title">
+        <header>
+          <h2 id="projects-title">My Projects</h2>
+          <p>Here are some of my recent works</p>
+        </header>
+        
+        <article>
+          <figure>
+            <img src="./src/images/img1.png" 
+                 alt="Screenshot of E-commerce Website interface" 
+                 width="400" 
+                 height="300">
+          </figure>
+          <div>
+            <h3>E-commerce Website</h3>
+            <ul>
+              <li>Developed a responsive e-commerce platform</li>
+              <li>Implemented secure payment gateway integration</li>
+              <li>Built with React.js and Node.js</li>
+              <li>Increased client's online sales by 40%</li>
+            </ul>
+          </div>
+        </article>
+
+        <article>
+          <figure>
+            <img src="./src/images/portfoliogenerator.png" 
+                 alt="Portfolio Generator application interface" 
+                 width="400" 
+                 height="300">
+          </figure>
+          <div>
+            <h3>Portfolio Generator</h3>
+            <ul>
+              <li>Created a dynamic portfolio generator tool</li>
+              <li>Custom template system with drag-and-drop interface</li>
+              <li>Built with Vue.js and Firebase</li>
+              <li>Used by 500+ developers</li>
+            </ul>
+          </div>
+        </article>
+
+        <article>
+          <figure>
+            <img src="./src/images/project2.jpg" 
+                 alt="Weather Dashboard showing forecast interface" 
+                 width="400" 
+                 height="300">
+          </figure>
+          <div>
+            <h3>Weather Dashboard</h3>
+            <ul>
+              <li>Real-time weather tracking application</li>
+              <li>Integration with OpenWeather API</li>
+              <li>Built with JavaScript and Bootstrap</li>
+              <li>Features 7-day forecast and location detection</li>
+            </ul>
+          </div>
+        </article>
+        
+        <a href="Projects.html" class="button">View All Projects</a>
+      </section>
+    </main>
+
+    <footer>
+      <p>© <time datetime="2024">2024</time> Reyan. All Rights Reserved.</p>
+    </footer>
+  </body>
+</html>
