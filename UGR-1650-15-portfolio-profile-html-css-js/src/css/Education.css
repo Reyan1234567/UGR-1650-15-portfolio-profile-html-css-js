@@ -27,7 +27,6 @@ body {
   margin-top: 10px;
   font-family: "Inter", serif;
 }
-
 h1 {
   font-size: 70px;
 }
@@ -172,7 +171,9 @@ footer {
   padding: 20px 0;
   margin-top: 20px;
 }
-
+#navbar #white{
+  color:white
+}
 footer p {
   font-size: 14px;
 }

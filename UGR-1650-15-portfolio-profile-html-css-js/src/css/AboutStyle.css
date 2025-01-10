@@ -78,7 +78,9 @@ nav {
   height: 40px;
   border-radius: 50%;
 }
-
+#navbar #white{
+  color:white
+}
 #main-menu {
   font-size: 24px;
   font-weight: 700;

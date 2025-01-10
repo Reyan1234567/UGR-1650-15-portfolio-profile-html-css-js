@@ -126,7 +126,9 @@ footer {
   padding: 20px 0;
   margin-top: 20px;
 }
-
+#navbar #white{
+  color:white
+}
 footer p {
   font-size: 14px;
   color:white
