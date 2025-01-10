@@ -2,47 +2,67 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta
-      name="description"
-      content="A showcase of my development projects and portfolio work"
->
-    <title>My Development Projects Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+    <meta name="description" content="Reyan's Portfolio - Front-end Developer specializing in responsive web development">
+    <title>Reyan - Front-end Developer Portfolio</title>
+    <link rel="stylesheet" href="./src/css/Projets.css">
+    <link rel="stylesheet" href="./src/css/fonts.css" />
+
   </head>
   <body>
-    <header>
-      <nav>
-        <div>
-          <a href="index.html" aria-label="Home">
-            <img
+    <header id="navbar-container">
+        <nav>
+            <div id="navbar">
+                <a href="index.html" aria-label="Home">
+                    <img
                       src="./src/images/logo.jpg"
                       alt="Website Logo"
                       width="150"
                       height="50"
                 >
-          </a>
-          <ul id="main-menu">
-            <li><a href="Home.html">Home</a></li>
-            <li><a href="About.html">About</a></li>
-            <li><a href="Projects.html" aria-current="page">Projects</a></li>
-            <li><a href="Education.html">Education</a></li>
-            <li><a href="Interests.html">Interests</a></li>
-          </ul>
-        </div>
-        <button
-          type="button"
-          aria-expanded="false"
-          aria-controls="main-menu"
-          aria-label="Toggle navigation menu"
-        >
-          ☰
-        </button>
-      </nav>
+                  </a>
+              <ul id="main-menu">
+                <li ><a href="Home.html" class="active">Home</a></li>
+                <li><a href="About.html">About</a></li>
+                <li><a href="Projects.html" aria-current="page">Projects</a></li>
+                <li><a href="Education.html">Education</a></li>
+                <li><a href="Interests.html">Interests</a></li>
+              </ul>
+              <button
+              type="button"
+              aria-expanded="false"
+              aria-controls="main-menu"
+              aria-label="Toggle navigation menu"
+              id="hamburger"
+            >
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                <!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                <path
+                  d="M0 96C0 78.3 14.3 64 32 64l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 128C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 288c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32L32 448c-17.7 0-32-14.3-32-32s14.3-32 32-32l384 0c17.7 0 32 14.3 32 32z"
+                />
+              </svg>
+            </button>
+  
+            <button
+              type="button"
+              aria-expanded="false"
+              aria-controls="main-menu"
+              aria-label="Toggle navigation menu"
+              id="close"
+            >
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
+                <!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                <path
+                  d="M376.6 84.5c11.3-13.6 9.5-33.8-4.1-45.1s-33.8-9.5-45.1 4.1L192 206 56.6 43.5C45.3 29.9 25.1 28.1 11.5 39.4S-3.9 70.9 7.4 84.5L150.3 256 7.4 427.5c-11.3 13.6-9.5 33.8 4.1 45.1s33.8 9.5 45.1-4.1L192 306 327.4 468.5c11.3 13.6 31.5 15.4 45.1 4.1s15.4-31.5 4.1-45.1L233.7 256 376.6 84.5z"
+                />
+              </svg>
+            </button>
+            </div>
+          </nav>
     </header>
-
     <main>
-      <article>
-        <header>
+      <article >
+        <header id="hero">
           <h1>My Projects</h1>
           <p>A showcase of my development work</p>
         </header>
@@ -60,7 +80,7 @@
                 >
                 </figure>
                 <div>
-                  <h2>E-commerce Platform</h2>
+                  <h3>E-commerce Platform</h3>
                   <p>
                     Full-stack web application built with React and Node.js,
                     featuring user authentication and payment integration.
@@ -80,7 +100,7 @@
                 >
                 </figure>
                 <div>
-                  <h2>Weather Dashboard</h2>
+                  <h3>Weather Dashboard</h3>
                   <p>
                     Real-time weather application using OpenWeather API and
                     JavaScript, with interactive maps.
@@ -100,7 +120,7 @@
                 >
                 </figure>
                 <div>
-                  <h2>Task Manager</h2>
+                  <h3>Task Manager</h3>
                   <p>
                     A CRUD application built with Python and Django, featuring
                     team collaboration tools.
@@ -120,7 +140,7 @@
                 >
                 </figure>
                 <div>
-                  <h2>Fitness Tracker App</h2>
+                  <h3>Fitness Tracker App</h3>
                   <p>
                     Mobile application developed with React Native, tracking
                     workout routines and progress.
@@ -140,7 +160,7 @@
                 >
                 </figure>
                 <div>
-                  <h2>Car management System</h2>
+                  <h3>Car management System</h3>
                   <p>
                     Car management system built with React
                   </p>
@@ -148,7 +168,7 @@
               </article>
             </li>
 
-            <li>
+            <li id="github">
               <article>
                 <figure>
                   <img
@@ -159,7 +179,7 @@
                 >
                 </figure>
                 <div>
-                  <h2>More Projects</h2>
+                  <h3>More Projects</h3>
                   <p>
                     Check out my
                     <a
@@ -180,5 +200,6 @@
     <footer>
       <p>© <time datetime="2024">2024</time> Reyan. All Rights Reserved.</p>
     </footer>
+    <script src="./src/js/header.js"></script>
   </body>
 </html>

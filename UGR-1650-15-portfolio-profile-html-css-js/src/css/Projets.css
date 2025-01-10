@@ -1,0 +1,346 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+@font-face {
+  font-family: 'Afacad Flux';
+  src: url('./src/fonts/AfacadFlux.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'Halant';
+  src: url('./src/fonts/Halant.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'Inter';
+  src: url('./src/fonts/Inter.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'Lexend Deca';
+  src: url('./src/fonts/LexendDeca.woff2') format('woff2');
+}
+body {
+  font-family: 'Inter', sans-serif;
+}
+
+body {
+  margin-top: 10px;
+  font-family: "Inter", serif;
+}
+
+h1 {
+  font-size: 70px;
+}
+
+h2 {
+  font-size: 50px;
+}
+
+p {
+  font-size: 25px;
+}
+
+#navbar-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+nav {
+  border-radius: 10px;
+  background-color: #5491e7;
+  width: 98%;
+  text-align: center;
+  padding: 20px;
+}
+
+#hamburger {
+  display: none;
+}
+
+#navbar-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+nav {
+  border-radius: 10px;
+  background-color: #5491e7;
+  width: 98%;
+  text-align: center;
+  padding: 10px;
+}
+
+#hamburger {
+  display: none;
+}
+
+#navbar {
+  margin: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+#navbar img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+#main-menu {
+  font-size: 24px;
+  font-weight: 700;
+  margin-right: 60px;
+  list-style: none;
+  display: flex;
+  gap: 40px;
+}
+
+#navbar a {
+  text-decoration: none;
+  color: black;
+}
+
+#hero {
+  height: 65vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 40px 20px;
+}
+
+main {
+  padding: 5%;
+}
+
+section[aria-label="Project Gallery"] ul {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+  list-style: none;
+  padding: 0 40px;
+  justify-items: center;
+}
+
+section[aria-label="Project Gallery"] li {
+  background-color: #a5c5f5;
+  border-radius: 10px;
+  overflow: hidden;
+  text-align: center;
+  width: 100%;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+section[aria-label="Project Gallery"] figure {
+  margin: 0;
+  width: 100%;
+}
+
+section[aria-label="Project Gallery"] img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+section[aria-label="Project Gallery"] h3 {
+  font-size: 1.5rem;
+  margin-top: 10px;
+}
+
+section[aria-label="Project Gallery"] p {
+  font-size: 1rem;
+  margin: 10px 0;
+}
+
+section[aria-label="Project Gallery"] a {
+  color: #3366cc;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+section[aria-label="Project Gallery"] a:hover {
+  text-decoration: underline;
+}
+
+#hamburger {
+  display: none;
+}
+#close{
+  display:none
+}
+
+#github {
+  background-color: rgb(255, 255, 255);
+}
+
+#github img {
+  width: 50%;
+}
+footer {
+  text-align: center;
+  background-color: #002256;
+  color: white;
+  padding: 20px 0;
+  margin-top: 20px;
+  gap: 20px;
+}
+
+footer p {
+  font-size: 14px;
+  grid-template-columns: repeat(1, 1fr);
+}
+
+
+@media (max-width: 1180px) {
+  nav{
+    padding:5px;
+  }
+  h1 {
+    font-size: 50px;
+  }
+  h2{
+    font-size: 40px
+  }
+  p {
+    font-size: 20px;
+  }
+  #home img {
+    width: 200px;
+    height: 200px;
+  }
+  #about ul li {
+    padding: 20px 40px;
+  }
+  #close {
+    display: none;
+    width: 30px;
+    height: 30px;
+    background-color: rgba(0, 0, 0, 0);
+    border-color: rgba(0, 0, 0, 0);
+  }
+  #hamburger {
+    display: inline;
+    width: 35px;
+    height:35px;
+    background-color: rgba(0, 0, 0, 0);
+    border-color: rgba(0, 0, 0, 0);
+  }
+
+  #main-menu {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  #navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+  }
+  #projects article {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media (max-width: 1024px) and (orientation: landscape) {
+  section[aria-label="Project Gallery"] ul {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Tablet Portrait: 1 column */
+@media (max-width: 768px) and (orientation: portrait) {
+  section[aria-label="Project Gallery"] ul {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Phone Landscape: 2 columns */
+@media (max-width: 667px) and (orientation: landscape) {
+  section[aria-label="Project Gallery"] ul {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Mobile Portrait: 1 column */
+@media (max-width: 480px) and (orientation: portrait) {
+  section[aria-label="Project Gallery"] ul {
+    grid-template-columns: 1fr;
+  }
+}
+@media (max-width: 1180px) {
+  h1 {
+    font-size: 50px;
+  }
+
+  h2 {
+    font-size: 40px;
+  }
+
+  p {
+    font-size: 20px;
+  }
+
+  nav {
+    padding: 5px;
+  }
+
+  #hero img,
+  #ela img,
+  #ela video {
+    width: 90%;
+    max-width: 700px;
+  }
+}
+
+@media (max-width: 801px) {
+  h1 {
+    font-size: 45px;
+  }
+
+  h2 {
+    font-size: 35px;
+  }
+
+  p {
+    font-size: 18px;
+  }
+
+  #hero img,
+  #ela img,
+  #ela video {
+    width: 95%;
+  }
+}
+
+@media (max-width: 425px) {
+  h1 {
+    font-size: 35px;
+  }
+
+  h2 {
+    font-size: 28px;
+  }
+
+  p {
+    font-size: 16px;
+  }
+
+  #hero img,
+  #ela img,
+  #ela video {
+    width: 100%;
+    max-width: none;
+  }
+}

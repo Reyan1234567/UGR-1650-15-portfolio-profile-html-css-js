@@ -1,0 +1,481 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+@font-face {
+  font-family: 'Afacad Flux';
+  src: url('./src/fonts/AfacadFlux.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'Halant';
+  src: url('./src/fonts/Halant.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'Inter';
+  src: url('./src/fonts/Inter.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'Lexend Deca';
+  src: url('./src/fonts/LexendDeca.woff2') format('woff2');
+}
+body {
+  font-family: 'Inter', sans-serif;
+}
+
+body{
+  margin-top: 10px;
+  font-family: "Inter", serif;
+}
+h1 {
+  font-size: 70px;
+}
+p {
+  font-size: 25px;
+}
+h2 {
+  font-size: 50px;
+}
+#navbar-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+#hamburger {
+  display: none;
+}
+#close{
+  display:none
+}
+
+nav {
+  border-radius: 10px;
+  background-color: #5491e7;
+  width: 98%;
+  text-align: center;
+  padding: 10px;
+}
+
+#hamburger {
+  display: none;
+}
+
+#navbar {
+  margin: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+#navbar img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+#main-menu {
+  font-size: 24px;
+  font-weight: 700;
+  margin-right: 60px;
+  list-style: none;
+  display: flex;
+  gap: 40px;
+}
+
+#navbar a {
+  text-decoration: none;
+  color: black;
+}
+
+#hero {
+  height: 35vh;
+  display: flex;
+  flex-direction: column;
+  padding: 0 10%;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+main {
+  padding: 90px;
+
+}
+
+audio {
+  margin-top:10px;
+  width: 50%; 
+  border: 2px solid #3366cc; 
+  border-radius: 23px;
+  background-color: #3366cc; 
+}
+
+#ela {
+  padding: 50px 0;
+}
+div[role="list"] {
+  display: flex;
+  gap: 20px;
+}
+footer {
+  text-align: center;
+  background-color: #002256;
+  color: white;
+  padding: 20px 0;
+  margin-top: 20px;
+}
+
+footer p {
+  font-size: 14px;
+  color:white
+}
+
+@media (max-width: 1180px) {
+  nav{
+    padding:5px;
+  }
+  h1 {
+    font-size: 50px;
+  }
+  h2{
+    font-size: 40px
+  }
+  p {
+    font-size: 20px;
+  }
+  #home img {
+    width: 200px;
+    height: 200px;
+  }
+  #about ul li {
+    padding: 20px 40px;
+  }
+  #close {
+    display: none;
+    width: 30px;
+    height: 30px;
+    background-color: rgba(0, 0, 0, 0);
+    border-color: rgba(0, 0, 0, 0);
+  }
+  #hamburger {
+    display: inline;
+    width: 35px;
+    height:35px;
+    background-color: rgba(0, 0, 0, 0);
+    border-color: rgba(0, 0, 0, 0);
+  }
+
+  #main-menu {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  #navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+  }
+  #projects article {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+
+#hero img {
+  width: 80%;
+  max-width: 800px; 
+  height: auto;
+}
+
+#ela video {
+  width: 100%; 
+  max-width: 600px; 
+  height: auto;
+}
+
+#ela {
+  padding: 50px 20px;
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+
+h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+p {
+  margin-bottom: 30px;
+  color: #555;
+}
+
+.carousel-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  position: relative;
+}
+
+div[role="list"] {
+  display: flex;
+  gap: 20px;
+  overflow: hidden;
+  width: 60%;
+}
+
+#on{
+  min-width: 100%;
+  transition: transform 0.5s ease-in-out;
+  display: none;
+}
+
+#off{
+  min-width: 100%;
+  transition: transform 0.5s ease-in-out;
+  display: block;
+}
+
+figcaption {
+  margin-top: 10px;
+  font-style: italic;
+  color: #333;
+}
+
+.nav-button {
+  color: rgb(40, 40, 40);
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  font-size: 1.2rem;
+  border-radius: 5px;
+}
+
+.nav-button:hover {
+  background: #0056b3;
+}
+
+.tablist {
+  margin-top: 20px;
+}
+
+.tablist button {
+  width: 15px;
+  height: 15px;
+  margin: 0 5px;
+  border: none;
+  border-radius: 50%;
+  background: #ddd;
+  cursor: pointer;
+}
+
+.tablist button[aria-selected="true"] {
+  background: #007BFF;
+}
+
+
+
+@media (max-width: 801px) {
+  #hero img,
+  #ela img,
+  #ela video {
+    width: 100%;
+    min-width: 500px;
+    height: auto;
+  }
+}
+
+@media (max-width: 425px) {
+  #hero img,
+  #ela img,
+  #ela video {
+    width: 100%;
+    min-width: 400px;
+    height: auto;
+  }
+  .nav-button {
+    color: rgb(40, 40, 40);
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    font-size: 1.2rem;
+    border-radius: 5px;
+  }
+}
+
+
+@media (max-width: 1180px) {
+  h1 {
+    font-size: 50px;
+  }
+
+  h2 {
+    font-size: 40px;
+  }
+
+  p {
+    font-size: 20px;
+  }
+
+  nav {
+    padding: 5px;
+  }
+
+  #hero img,
+  #ela img,
+  #ela video {
+    width: 100%;
+    min-width: 350px;
+    height: auto;
+  }
+}
+
+@media (max-width: 801px) {
+  h1 {
+    font-size: 45px;
+  }
+
+  h2 {
+    font-size: 35px;
+  }
+
+  p {
+    font-size: 18px;
+  }
+
+  #hero img,
+  #ela img,
+  #ela video {
+    width: 100%;
+    min-width: 300px;
+    height: auto;
+  }
+}
+
+@media (max-width: 425px) {
+  h1 {
+    font-size: 35px;
+  }
+
+  h2 {
+    font-size: 28px;
+  }
+
+  p {
+    font-size: 16px;
+  }
+
+  #hero img,
+  #ela img,
+  #ela video {
+    width: 100%;
+    min-width: 300px;
+    height: auto;
+  }
+}
+@media (max-width: 1180px) {
+  main{
+    padding:30px;
+  }
+  h1 {
+    font-size: 50px;
+  }
+
+  h2 {
+    font-size: 40px;
+  }
+
+  p {
+    font-size: 20px;
+  }
+
+  nav {
+    padding: 5px;
+  }
+
+  #main-menu {
+    display: none;
+  }
+
+  #hamburger {
+    display: inline;
+    width: 35px;
+    height: 35px;
+    background-color: transparent;
+    border: none;
+  }
+
+  #navbar {
+    justify-content: space-between;
+  }
+
+  #hero img,
+  #ela img,
+  #ela video {
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media (max-width: 801px) {
+  main{
+    padding:10px
+  }
+  h1 {
+    font-size: 40px;
+  }
+
+  h2 {
+    font-size: 30px;
+  }
+
+  p {
+    font-size: 18px;
+  }
+
+  #hero img,
+  #ela img,
+  #ela video {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 425px) {
+  main{
+    padding:5px
+  }
+  h1 {
+    font-size: 30px;
+  }
+
+  h2 {
+    font-size: 24px;
+  }
+
+  p {
+    font-size: 16px;
+  }
+
+  nav {
+    padding: 5px;
+  }
+
+  #hero img,
+  #ela img,
+  #ela video {
+    max-width: 100%;
+    padding:0
+  }
+}
+
+

@@ -8,55 +8,75 @@
       content="About Reyan - Software Engineering Student at AAU and Digital Designer"
     />
     <title>About Me - Reyan's Portfolio</title>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
-    />
+    <link rel="stylesheet" href="./src/css/AboutStyle.css" />
+    <link rel="stylesheet" href="./src/css/fonts.css" />
+
   </head>
   <body>
-    <header>
+    <header id="navbar-container">
       <nav>
-        <div>
+        <div id="navbar">
           <a href="index.html" aria-label="Home">
             <img
               src="./src/images/logo.jpg"
               alt="Website Logo"
               width="150"
               height="50"
+              id="logo"
             />
           </a>
           <ul id="main-menu">
-            <li><a href="Home.html">Home</a></li>
+            <li><a href="Home.html" class="active">Home</a></li>
             <li><a href="About.html">About</a></li>
             <li><a href="Projects.html" aria-current="page">Projects</a></li>
             <li><a href="Education.html">Education</a></li>
             <li><a href="Interests.html">Interests</a></li>
           </ul>
+
+          <button
+            type="button"
+            aria-expanded="false"
+            aria-controls="main-menu"
+            aria-label="Toggle navigation menu"
+            id="hamburger"
+          >
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+              <!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+              <path
+                d="M0 96C0 78.3 14.3 64 32 64l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 128C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 288c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32L32 448c-17.7 0-32-14.3-32-32s14.3-32 32-32l384 0c17.7 0 32 14.3 32 32z"
+              />
+            </svg>
+          </button>
+
+          <button
+            type="button"
+            aria-expanded="false"
+            aria-controls="main-menu"
+            aria-label="Toggle navigation menu"
+            id="close"
+          >
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
+              <!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+              <path
+                d="M376.6 84.5c11.3-13.6 9.5-33.8-4.1-45.1s-33.8-9.5-45.1 4.1L192 206 56.6 43.5C45.3 29.9 25.1 28.1 11.5 39.4S-3.9 70.9 7.4 84.5L150.3 256 7.4 427.5c-11.3 13.6-9.5 33.8 4.1 45.1s33.8 9.5 45.1-4.1L192 306 327.4 468.5c11.3 13.6 31.5 15.4 45.1 4.1s15.4-31.5 4.1-45.1L233.7 256 376.6 84.5z"
+              />
+            </svg>
+          </button>
         </div>
-        <button
-          type="button"
-          aria-expanded="false"
-          aria-controls="main-menu"
-          aria-label="Toggle navigation menu"
-        >
-          ☰
-        </button>
       </nav>
     </header>
 
     <main>
-      <h1>About Me</h1>
-
-      <section>
-        <h2>Welcome to My Story</h2>
+      <section id="hero">
+        <h1>Welcome to My Story</h1>
         <p>Learn about my journey in technology and design</p>
       </section>
 
-      <section>
-        <h2>Education</h2>
-        <div>
+      <section id="Education">
+        <div id="EducationContainer">
           <article>
-            <h3>Student at AAU</h3>
+            <h2>Education</h2>
+            <p>Student at AAU</p>
             <ol>
               <li>
                 <p>
@@ -75,71 +95,36 @@
               alt="Addis Ababa University campus"
               width="400"
               height="300"
+              id="AAU"
             />
           </figure>
         </div>
 
-        <div>
-          <h3>My campus is AAiT</h3>
-          <div role="region" aria-label="Campus image gallery">
-            <button type="button" aria-label="Previous image">
-              <i class="fa-solid fa-chevron-left" aria-hidden="true"></i>
-            </button>
-
-            <figure>
-              <img
-                src="./src/images/5kilo.jpg"
-                alt="5 Kilo Campus view"
-                width="400"
-                height="300"
-              />
+        <div id="carousel" role="region" aria-label="Campus image carousel">
+          <button id="prevBtn" aria-label="Previous image">
+            ←
+          </button>
+          
+          <div id="carouselImages">
+            <figure class="carousel-item">
+              <img src="./src/images/5kilo.jpg" alt="5 Kilo Campus view" />
             </figure>
-            <figure>
-              <img
-                src="./src/images/NB.jpg"
-                alt="Natural Science Building"
-                width="400"
-                height="300"
-              />
+            <figure class="carousel-item">
+              <img src="./src/images/NB.jpg" alt="Natural Science Building" />
             </figure>
-            <figure>
-              <img
-                src="./src/images/AAit.jpg"
-                alt="AAiT Main Building"
-                width="400"
-                height="300"
-              />
+            <figure class="carousel-item">
+              <img src="./src/images/AAit.jpg" alt="AAiT Main Building" />
             </figure>
-
-            <button type="button" aria-label="Next image">
-              <i class="fa-solid fa-chevron-right" aria-hidden="true"></i>
-            </button>
-
-            <div role="tablist" aria-label="Image navigation">
-              <button
-                type="button"
-                role="tab"
-                aria-selected="true"
-                aria-label="View first image"
-              ></button>
-              <button
-                type="button"
-                role="tab"
-                aria-selected="false"
-                aria-label="View second image"
-              ></button>
-              <button
-                type="button"
-                role="tab"
-                aria-selected="false"
-                aria-label="View third image"
-              ></button>
-            </div>
           </div>
+          
+          <button id="nextBtn" aria-label="Next image">
+            →
+          </button>
         </div>
+        
       </section>
 
-      <section>
+      <section id="Design">
         <h2>Design Portfolio</h2>
         <p>
           While I may not possess exceptional traditional artistic skills, I've
@@ -147,7 +132,7 @@
           stunning digital art.
         </p>
 
-        <div role="list" aria-label="Digital art portfolio">
+        <div id="Digital" role="list" aria-label="Digital art portfolio">
           <figure>
             <img
               src="./src/images/cr7.png"
@@ -182,5 +167,7 @@
     <footer>
       <p>© <time datetime="2024">2024</time> Reyan. All Rights Reserved.</p>
     </footer>
+    <script src="./src/js/script.js"></script>
+    <script src="./src/js/header.js"></script>
   </body>
 </html>
